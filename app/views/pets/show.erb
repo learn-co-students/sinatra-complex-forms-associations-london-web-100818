@@ -1,1 +1,9 @@
-show.erb
+
+<p><%=@pet.name %></p>
+<%if @pet.owner!=nil%>
+<p>The owners are:</p>
+<%=@pet.owner.name%>
+<%else%>
+<p>It has no owner</p>
+
+<%end%>
